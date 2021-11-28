@@ -1,0 +1,11 @@
+<%- include('../partials/head') %>
+
+    <div class="container">
+        <h1>
+            Edit comment id: <%= comment.id %>
+        </h1>
+
+        <textarea name="comment" id="comment" cols="40" rows="5"><%= comment.comment  %></textarea>
+    </div>
+
+    <%- include('../partials/footer') %>

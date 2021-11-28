@@ -1,0 +1,22 @@
+<%- include('../partials/head') %>
+
+    <div class="container">
+        <h1>Comments</h1>
+
+        <ul>
+            <% for(let c of comments){ %>
+                <li>
+                    <a href="/comments/<%= c.id %>" class="text-decoration-none text-black"">
+                        <%= c.comment %> - <b>
+                                <%= c.username %>
+                            </b>
+                    </a>
+                </li>
+                <% } %>
+        </ul>
+
+        <a href=" /comments/new">New Comment</a>
+
+    </div>
+
+    <%- include('../partials/footer') %>
